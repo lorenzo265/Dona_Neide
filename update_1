@@ -1,0 +1,62 @@
+def update(self):
+        now = pygame.time.get_ticks()
+
+        # Se estiver preso, ignora movimento
+        if self.stuck:
+            if now >= self.stuck_end:
+                self.stuck = False
+            else:
+                return  # ❗️IMPORTANTE: não executa nada enquanto presa
+
+
+        # Slip (escorregão)
+        if now < self.slip_end:
+            return
+        else:
+            self.image = self.image_shield if self.shield_active else self.image_normal
+
+        # Teclado
+        keys = pygame.key.get_pressed()
+        dx = 0
+        speed = self.speed * (1.5 if self.power_up else 1)
+
+        if keys[pygame.K_LEFT]:
+            dx = -speed
+        elif keys[pygame.K_RIGHT]:
+            dx = speed
+        self.rect.x += dx
+        self.rect.clamp_ip(screen.get_rect())
+
+        # PULO
+        if keys[pygame.K_UP] and self.on_ground:
+            self.vel_y = self.jump_speed
+            self.on_ground = False
+
+        # GRAVIDADE
+        self.vel_y += self.gravity
+        self.rect.y += self.vel_y
+
+        # COLISÃO COM CHÃO
+        ground_y = SCREEN_HEIGHT - self.rect.height - 20
+        if self.rect.bottom >= ground_y:
+            self.rect.bottom = ground_y
+            self.vel_y = 0
+            self.on_ground = True
+
+        # ESCUDO
+        if keys[pygame.K_SPACE] and not self.shield_active:
+            self.shield_active = True
+            self.shield_timer = now
+
+        if self.shield_active and now - self.shield_timer > self.shield_time:
+            self.shield_active = False
+
+        # BOOST
+        if self.power_up and now - self.power_timer > self.power_duration:
+            self.power_up = False
+
+        # Restaura velocidade se estava lento
+        if hasattr(self, "slow_until") and now > self.slow_until:
+            self.speed = 7
+
+

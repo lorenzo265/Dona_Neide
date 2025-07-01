@@ -1,5 +1,8 @@
 ## Guia Completo do Jogo: Mãe Multitarefa - A Jornada de Dona Neide
 
+**O que você deve usar é o main.py o outro esta com problemas, mas a formulação e estruturação está diferente, vale a pena olhar se for do seu interesse (não vai estar uau que top, mas né..)**
+**Para rodar você vai precisar do pygame e do opencv-python e do python também (não entendi se eles são a mesma coisa ou são diferentes, na duvida usei os dois)**
+
 ### Introdução
 
 "Mãe Multitarefa" é um jogo de plataforma 2D desenvolvido com Pygame, estrelando Dona Neide, uma mãe brasileira que enfrenta desafios cotidianos
@@ -55,7 +58,7 @@ A batalha final é travada entre a determinação de Neide e o caos de Fanhos.
 
 ---
 
-### Parte 4: Chefes e Ciclos de Ataque
+### Parte 3: Chefes e Ciclos de Ataque
 
 &#x20;O Fanhos, chefe final, utiliza um padrão especial:
 
@@ -66,7 +69,7 @@ A batalha final é travada entre a determinação de Neide e o caos de Fanhos.
 
 ---
 
-### Parte 5: Interface e HUD
+### Parte 4: Interface e HUD
 
 * **Barra de Vida**: Representa a resistência de Neide
 * **Barra de Energia**: Usada para poderes especiais
@@ -74,7 +77,7 @@ A batalha final é travada entre a determinação de Neide e o caos de Fanhos.
 
 ---
 
-### Parte 6: Sistema de Pontuação
+### Parte 5: Sistema de Pontuação
 
 * Meia da 1 ponto
 * Caneca da 5 pontos
@@ -84,7 +87,7 @@ A batalha final é travada entre a determinação de Neide e o caos de Fanhos.
 
 ---
 
-### Parte 8: Final do Jogo
+### Parte 6: Final do Jogo
 
 Após derrotar Fanhos, é exibida a cutscene final. Neide retorna a sua casa, acordando no chão da rua depois da explosão. Ela ja pode tomar seu merecido café
 

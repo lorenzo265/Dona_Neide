@@ -1,5 +1,5 @@
 # main.py (no início do arquivo)
-DEBUG_BOSS_ONLY = True  # ← coloque False quando quiser o fluxo normal
+DEBUG_BOSS_ONLY = False # ← coloque False quando quiser o fluxo normal
 
 
 import pygame

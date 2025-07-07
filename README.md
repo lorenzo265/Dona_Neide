@@ -1,12 +1,12 @@
 ## Guia Completo do Jogo: Mãe Multitarefa - A Jornada de Dona Neide
 
 **O que você deve usar é o main.py o outro esta com problemas, mas a formulação e estruturação está diferente, vale a pena olhar se for do seu interesse (não vai estar uau que top, mas né..)**
-**Para rodar você vai precisar do pygame e do opencv-python e do python também (não entendi se eles são a mesma coisa ou são diferentes, na duvida usei os dois)**
+**Para rodar você vai precisar do pygame, do opencv-python e do python instalados**
 
 ### Introdução
 
 "Mãe Multitarefa" é um jogo de plataforma 2D desenvolvido com Pygame, estrelando Dona Neide, uma mãe brasileira que enfrenta desafios cotidianos
-elevados ao extremo em um universo onde as tarefas do lar se transformaram em aventuras perigosas. O jogo combina elementos de ação com uma narrativa humorada.
+elevados ao extremo em um universo onde as tarefas do lar se transformaram em aventuras perigosas. O jogo combina elementos de ação com uma narrativa engraçada.
 
 ### Parte 1: Lore - A História de Dona Neide
 
@@ -32,6 +32,8 @@ Fanhos está obcecado por quebrar a rotina da vida doméstica.
 
 A batalha final é travada entre a determinação de Neide e o caos de Fanhos.
 
+Quando fanhos chega na metade da sua vida ele tenta estalar sua luva das meias do infinito, mas não aguenta o poder e sucumbe numa explosão.
+
 ---
 
 ### Parte 2: Mecanismos de Jogo
@@ -48,19 +50,19 @@ A batalha final é travada entre a determinação de Neide e o caos de Fanhos.
 
 #### Recursos
 
-* **Vidas**: Neide tem 3 vidas por fase. Ao perder todas, a fase reinicia.
+* **Vidas**: Neide tem 3 vidas por tentativa. Ao perder todas, o jogo reinicia.
 
 #### Sistema de Missões
 
-* 3 fase é a do entregador temporal
-* fase 7 é a do fanhos
-* as outras são para encher linguiça e o player se acostumar com as mecanicas
+* A 3° fase é a do entregador temporal.
+* A fase 7 é a fase final do fanhos.
+* As outras são para o player se acostumar com as mecanicas e se divertir.
 
 ---
 
 ### Parte 3: Chefes e Ciclos de Ataque
 
-&#x20;O Fanhos, chefe final, utiliza um padrão especial:
+O Fanhos, chefe final, utiliza um padrão especial:
 
 * 4 ataques com Meias Neon (projetéis rápidos)
 * 1 ataque com Meia Pegajosa (deixa Neide presa temporariamente)
@@ -95,7 +97,7 @@ Após derrotar Fanhos, é exibida a cutscene final. Neide retorna a sua casa, ac
 
 ### Parte 9: Créditos e Reconhecimentos
 
-* Criação e Programação: Lorenzo e equipe
-* Arte e Animação: Lorenzo e equipe
-* Roteiro e Lore: Lorenzo e equipe
+* Criação e Programação: Lorenzo Ruggini
+* Arte e Animação: Lorenzo Ruggini
+* Roteiro e Lore: Lorenzo Ruggini
 * Sons e Música: Produzidos com  samples gratuitos
